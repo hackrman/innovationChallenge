@@ -40,20 +40,5 @@ public class GameController {
 	 public Optional<Row> getSelectedRow(@PathVariable int rowId){
 		 return aService.getRow(rowId);
 	 }
-	 
-	 @PutMapping("/spot/flipped/{spotId}")
-	 public void flipSpot(@RequestBody Spot spot, @PathVariable int spotId){
-		 aService.updateSpot(spot, spotId, "flipped"); 
-	 }
-	 
-	 @PutMapping("/spot/unflipped/{spotId}")
-	 public void unflippedSpot(@RequestBody Spot spot, @PathVariable int spotId){
-		 aService.updateSpot(spot, spotId, "unflipped"); 
-	 }
-	 
-	 /*@PostMapping("/{rowId}/addSpot")
-	 public void addSpot(@RequestBody Spot spot, @PathVariable int rowId) {
-		 aService.updateSpot(spot);
-	 }*/
 	
 }
