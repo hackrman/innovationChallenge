@@ -1,0 +1,32 @@
+package com.example.demo;
+
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class GameService {
+
+	@Autowired
+	RowRepository rowRepository;
+	@Autowired
+	SpotRepository spotRepository;
+	
+	 public Optional<Spot> getSpot(int spot_id){
+		 return spotRepository.findById(spot_id);
+	 }
+	 
+	 public Optional<Row> getRow(int row_id){
+		 return rowRepository.findById(row_id);
+	 }
+	 
+	 public void updateSeat(Spot spot){
+		 spotRepository.save(spot);
+	 }
+	 
+	 public void updateRow(Row row, int showtimeId) {
+		 rowRepository.save(row);
+	 }
+	 
+}
