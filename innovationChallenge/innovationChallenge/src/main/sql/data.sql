@@ -1,0 +1,31 @@
+insert into card_row (row_letter) values ('A');
+insert into card_row (row_letter) values ('B');
+insert into card_row (row_letter) values ('C');
+insert into card_row (row_letter) values ('D');
+insert into card_row (row_letter) values ('E');
+
+ 
+insert into card_spot ( spot_id, card_description, image_path, match_id, spot_name, spot_status, row_id ) values (1 ,'description','image path', 0, 'spot name', 'unflipped' ,1); 
+insert into card_spot ( spot_id, card_description, image_path, match_id, spot_name, spot_status, row_id ) values (2 ,'description','image path', 0, 'spot name', 'unflipped' ,1); 
+insert into card_spot ( spot_id, card_description, image_path, match_id, spot_name, spot_status, row_id ) values (3 ,'description','image path', 0, 'spot name', 'unflipped' ,1); 
+insert into card_spot ( spot_id, card_description, image_path, match_id, spot_name, spot_status, row_id ) values (4 ,'description','image path', 0, 'spot name', 'unflipped' ,1); 
+insert into card_spot ( spot_id, card_description, image_path, match_id, spot_name, spot_status, row_id ) values (5 ,'description','image path', 0, 'spot name', 'unflipped' ,1); 
+insert into card_spot ( spot_id, card_description, image_path, match_id, spot_name, spot_status, row_id ) values (6 ,'description','image path', 0, 'spot name', 'unflipped' ,1);   
+insert into card_spot ( spot_id, card_description, image_path, match_id, spot_name, spot_status, row_id ) values (7 ,'description','image path', 0, 'spot name', 'unflipped' ,2); 
+insert into card_spot ( spot_id, card_description, image_path, match_id, spot_name, spot_status, row_id ) values (8 ,'description','image path', 0, 'spot name', 'unflipped' ,2); 
+insert into card_spot ( spot_id, card_description, image_path, match_id, spot_name, spot_status, row_id ) values (9 ,'description','image path', 0, 'spot name', 'unflipped' ,2); 
+insert into card_spot ( spot_id, card_description, image_path, match_id, spot_name, spot_status, row_id ) values (10 ,'description','image path', 0, 'spot name', 'unflipped' ,2); 
+insert into card_spot ( spot_id, card_description, image_path, match_id, spot_name, spot_status, row_id ) values (11 ,'description','image path', 0, 'spot name', 'unflipped' ,2); 
+insert into card_spot ( spot_id, card_description, image_path, match_id, spot_name, spot_status, row_id ) values (12 ,'description','image path', 0, 'spot name', 'unflipped' ,2);  
+insert into card_spot ( spot_id, card_description, image_path, match_id, spot_name, spot_status, row_id ) values (13 ,'description','image path', 0, 'spot name', 'unflipped' ,3); 
+insert into card_spot ( spot_id, card_description, image_path, match_id, spot_name, spot_status, row_id ) values (14 ,'description','image path', 0, 'spot name', 'unflipped' ,3); 
+insert into card_spot ( spot_id, card_description, image_path, match_id, spot_name, spot_status, row_id ) values (15 ,'description','image path', 0, 'spot name', 'unflipped' ,3); 
+insert into card_spot ( spot_id, card_description, image_path, match_id, spot_name, spot_status, row_id ) values (16 ,'description','image path', 0, 'spot name', 'unflipped' ,3); 
+insert into card_spot ( spot_id, card_description, image_path, match_id, spot_name, spot_status, row_id ) values (17 ,'description','image path', 0, 'spot name', 'unflipped' ,3); 
+insert into card_spot ( spot_id, card_description, image_path, match_id, spot_name, spot_status, row_id ) values (18 ,'description','image path', 0, 'spot name', 'unflipped' ,3);   
+insert into card_spot ( spot_id, card_description, image_path, match_id, spot_name, spot_status, row_id ) values (19 ,'description','image path', 0, 'spot name', 'unflipped' ,4); 
+insert into card_spot ( spot_id, card_description, image_path, match_id, spot_name, spot_status, row_id ) values (20 ,'description','image path', 0, 'spot name', 'unflipped' ,4); 
+insert into card_spot ( spot_id, card_description, image_path, match_id, spot_name, spot_status, row_id ) values (21 ,'description','image path', 0, 'spot name', 'unflipped' ,4); 
+insert into card_spot ( spot_id, card_description, image_path, match_id, spot_name, spot_status, row_id ) values (22 ,'description','image path', 0, 'spot name', 'unflipped' ,4); 
+insert into card_spot ( spot_id, card_description, image_path, match_id, spot_name, spot_status, row_id ) values (23 ,'description','image path', 0, 'spot name', 'unflipped' ,4); 
+insert into card_spot ( spot_id, card_description, image_path, match_id, spot_name, spot_status, row_id ) values (24 ,'description','image path', 0, 'spot name', 'unflipped' ,4);

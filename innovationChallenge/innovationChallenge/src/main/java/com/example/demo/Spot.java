@@ -2,6 +2,8 @@ package com.example.demo;
 
 import javax.persistence.*;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 @Entity
 @Table(name="card_spot")
 public class Spot {
@@ -15,8 +17,10 @@ public class Spot {
 	private String spotStatus;
 	private String cardDescription;
 	private String imagePath;
+	private String htmlInfo;
 
 	@ManyToOne
+	@JsonIgnore //added to remove row information from JSON
 	private Row row;
 
 	/**
@@ -38,7 +42,7 @@ public class Spot {
      * @param row
      */
 	public Spot(int spotId, int matchId, String spotName, String spotStatus, 
-			String cardDescription, String imagePath, Row row) {
+			String cardDescription, String imagePath, String htmlInfo, Row row) {
 		super();
 		this.spotId = spotId;
 		this.matchId = matchId;
@@ -46,6 +50,7 @@ public class Spot {
 		this.spotStatus = spotStatus;
 		this.cardDescription = cardDescription;
 		this.imagePath = imagePath;
+		this.htmlInfo = htmlInfo;
 		this.row = row;
 	}
 
@@ -95,6 +100,14 @@ public class Spot {
 
 	public void setImagePath(String imagePath) {
 		this.imagePath = imagePath;
+	}
+	
+	public String getHtmlInfo() {
+		return htmlInfo;
+	}
+	
+	public void setHtmlInfo(String htmlInfo) {
+		this.htmlInfo = htmlInfo;
 	}
 
 	public Row getRow() {
