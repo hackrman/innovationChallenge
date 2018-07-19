@@ -21,12 +21,17 @@ public class GameService {
 		 return rowRepository.findById(row_id);
 	 }
 	 
-	 public void updateSeat(Spot spot){
+	 public void updateSpot(Spot spot, int spotId, String status) {
+		 spot.setSpotStatus(status);
 		 spotRepository.save(spot);
 	 }
 	 
-	 public void updateRow(Row row, int showtimeId) {
-		 rowRepository.save(row);
+	 public Iterable<Spot> findAllSpots() {
+		 return spotRepository.findAll();
+	 }
+	 
+	 public Iterable<Row> findAllRows() {
+		 return rowRepository.findAll();
 	 }
 	 
 }
